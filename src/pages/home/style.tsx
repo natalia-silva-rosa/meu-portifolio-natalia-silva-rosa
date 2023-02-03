@@ -1,9 +1,7 @@
 import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
-import { css } from "@stitches/react";
 
-import meIlustration from "@/public/static/img/background/me-ilustration.svg";
 import backgroundImg from "@/public/static/img/background/header-bg.svg";
 
 import dots from "@/public/static/img/background/dots.svg";
@@ -107,6 +105,20 @@ export const ProjectsArea = styled("section", {
   backgroundImage: `url(${dots})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "left top 11rem",
+  "@tablet": {
+    backgroundPosition: "right top 8rem",
+    padding: "$sectionMobile 0",
+  },
+});
+
+export const AboutMeArea = styled("section", {
+  padding: "$section 0",
+  backgroundColor: "$grey0",
+  backgroundImage: `url(${dots})`,
+  // backgroundRepeat: "no-repeat",
+  // backgroundPosition: "left top 11rem",
+  borderBottom: "2px solid $grey5",
+
   "@tablet": {
     backgroundPosition: "right top 8rem",
     padding: "$sectionMobile 0",
